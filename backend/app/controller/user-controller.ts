@@ -27,7 +27,7 @@ export const signupUser = async (request: Request, response: Response) => {
                 email,
                 phone,
                 password: hashedPassword,
-                atempts: 0
+                attempts: 0
             }
         )
         const result = await newUser.save();
